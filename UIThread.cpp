@@ -257,8 +257,11 @@ void UIThread::run() {
     // say("Press any key to play a sound, then press ESC to quit.");
 
     std::map<char, uint8_t> keymap;
-    const char keys[97] = R"(ZXCVBNM<>?  ASDFGHJKL:" QWERTYUIOP{}!@#$%^&*()_+zxcvbnm,./  asdfghjkl;' qwertyuiop[]1234567890-=)";
-    for (uint8_t i=0; i<strlen(keys); ++i) if (keys[i] != ' ') keymap[keys[i]] = i;
+
+    const char firstRow[] = "zsxdcvgbhnjm,l.;/";
+    for (uint8_t i=0; i<strlen(firstRow); ++i) if (firstRow[i] != ' ') keymap[firstRow[i]] = i+48;
+    const char secondRow[] = "q2w3er5t6y7ui9o0p[=]";
+    for (uint8_t i=0; i<strlen(secondRow); ++i) if (secondRow[i] != ' ') keymap[secondRow[i]] = i+60;
 
     char next='\0', prev;
     while (next != '\x1b') {
