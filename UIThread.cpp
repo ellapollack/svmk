@@ -59,7 +59,7 @@ void resize(int i) {
 
     int halfWidth = ws.ws_col / 2;
     int halfHeight = ws.ws_row / 2;
-    int left = halfWidth - 5;
+    int left = halfWidth - 4;
     int top = halfHeight - 2;
 
 	//clean up the buffer
@@ -153,7 +153,7 @@ void resize(int i) {
     say(" ");
     say("\u001b[47m"); // white background
     say("]");
-    for (int col = 30; col > 0; col--)
+    for (int col = 32; col > 0; col--)
     {
         say("\x1b[1D"); // left
     }
@@ -176,17 +176,19 @@ void resize(int i) {
     say("\u001b[40m"); // black background
     say("h");
     say("\u001b[47m"); // white background
-    say("  ");
-    say("\u001b[40m"); // black background
-    say("k");
-    say("\u001b[47m"); // white background
     say(" ");
+    say("\u001b[40m"); // black background
+    say("j");
+    say("\u001b[47m"); // white background
+    say("  ");
     say("\u001b[40m"); // black background
     say("l");
     say("\u001b[47m"); // white background
-    say("  ");
+    say(" ");
     say("\u001b[40m"); // black background
-    say("'");
+    say(";");
+    say("\u001b[47m"); // white background
+    say(" ");
     for (int col = 17; col > 0; col--)
     {
         say("\x1b[1D"); // left
@@ -210,17 +212,19 @@ void resize(int i) {
     say("\u001b[40m"); // black background
     say(" ");
     say("\u001b[47m"); // white background
-    say("nm");
+    say("n");
     say("\u001b[40m"); // black background
     say(" ");
     say("\u001b[47m"); // white background
-    say(",");
+    say("m,");
     say("\u001b[40m"); // black background
     say(" ");
     say("\u001b[47m"); // white background
-    say("./");
+    say(".");
     say("\u001b[40m"); // black background
     say(" ");
+    say("\u001b[47m"); // white background
+    say("/");
     say("\u001b[0m"); // reset colors
     say("\x1b[0;0H"); // move to 0,0
 }
