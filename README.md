@@ -5,7 +5,7 @@
 ![](ss.png)
 
 1. Install the latest version of [CMake](https://cmake.org/install/)
-2. Download the [`SOUL_PatchLoader DLL`](https://github.com/soul-lang/SOUL/releases/latest) and put it in the `SOUL` subdirectory of your [`userApplicationDataDirectory`](https://docs.juce.com/master/classFile.html#a3e19cafabb03c5838160263a6e76313da0c9f89d8dc9f9f32c9eb42428385351d)
+2. Download the [`SOUL_PatchLoader DLL`](https://github.com/soul-lang/SOUL/releases/latest) and put it in a folder called `SOUL` inside your [`userApplicationDataDirectory`](https://docs.juce.com/master/classFile.html#a3e19cafabb03c5838160263a6e76313da0c9f89d8dc9f9f32c9eb42428385351d)
 4. Download **SVMK**: `git clone --recurse-submodules https://github.com/maxwellpollack/svmk.git && cd svmk`
 5. Configure: `cmake .`
 6. Build: `cmake --build ./`
