@@ -1,6 +1,7 @@
 **SVMK** is a terminal-based virtual MIDI keyboard for [SOUL Patches](https://github.com/soul-lang/SOUL/blob/master/docs/SOUL_Patch_Format.md).
 - Supports **hot-reloading** of SOUL Patches (just re-save the patch file)
 - Playback is **monophonic** because ANSI terminals don't support keyup events
+- Press <kbd>ESC</kbd> to exit
 
 ![](ss.png)
 
