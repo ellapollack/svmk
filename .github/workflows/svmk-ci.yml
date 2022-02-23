@@ -248,10 +248,10 @@ jobs:
       fail-fast: false
       matrix:
         config:
-        - {
-            name: "Windows Latest MSVC", artifact: "Windows",
-            os: ubuntu-latest
-          }
+#         - {
+#             name: "Windows Latest MSVC", artifact: "Windows",
+#             os: ubuntu-latest
+#           }
         - {
             name: "Ubuntu Latest GCC", artifact: "Linux",
             os: ubuntu-latest
